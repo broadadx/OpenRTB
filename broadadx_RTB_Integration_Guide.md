@@ -141,12 +141,10 @@ This object should be included if the ad supported content is a website as oppos
  id         | string       | Required      | Exchange-specific site ID.                                
  name       | string       | Required         | name string Site name (may be aliased at the publisher’s request).                                                
  domain     | string       | Required         | Domain of the site (e.g., “mysite.foo.com”).
- pagecat    | string array |             |Array of IAB content categories that describe the current page
-or view of the site. Refer to List 5.1.
+ pagecat    | string array |             |Array of IAB content categories that describe the current page or view of the site. Refer to List 5.1.
  page| string       |          |  URL of the page where the impression will be shown.
  cat        | string array |              | Array of IAB content categories of the site. Refer to List 5.1.                                   
- sectioncat | string array |              | Array of IAB content categories that describe the current
-section of the site. Refer to List 5.1.                               
+ sectioncat | string array |              | Array of IAB content categories that describe the current section of the site. Refer to List 5.1.                               
  
                                      
 ##### 3.2.6 Object: App
@@ -162,10 +160,8 @@ This object should be included if the ad supported content is a non-browser appl
  domain     | string       |              | Domain of the app.                                    
  storeurl   | string       |              | App store URL for an installed app.                                        
  cat        | string array |              | Array of IAB content categories of the site. Refer to OpenRTB List 5.1.                            
- sectioncat | string array |              | Array of IAB content categories that describe the current
-section of the app. Refer to List 5.1
- pagecat    | string array |             | Array of IAB content categories that describe the current page
-or view of the app. Refer to List 5.1.
+ sectioncat | string array |              | Array of IAB content categories that describe the current section of the app. Refer to List 5.1
+ pagecat    | string array |             | Array of IAB content categories that describe the current page or view of the app. Refer to List 5.1.
  ver        | string      |              | Application version. 
  privacypolicy |integer |                |Indicates if the app has a privacy policy, where 0 = no, 1 = yes.
  paid       | integer      |              | 0 = app is free, 1 = the app is a paid version.                               
@@ -335,8 +331,7 @@ Name    | Type         | Required, Default | Description
 ##### 5.1.2.3 Data Asset Object
 Name    | Type         | Required, Default | Description    
 :--------|:-------------|:-------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- type      | integer       | Required | Type ID of the element supported by the publisher. The publisher
-can display this information in an appropriate format. 
+ type      | integer       | Required | Type ID of the element supported by the publisher. The publisher can display this information in an appropriate format. 
  len   | integer             |     | len optional integer - Maximum length of the text in the element’s response.
 
 
